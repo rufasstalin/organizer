@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Login and Registration Form - easy Tutorials</title>
+        <link rel="stylesheet" href="style3.css">
+   </head>
+    <body>
+        <style>
+            body{
+                background-image:url(livepartybg.jpg);
+                background-size: cover;
+            }
+
+        </style>
+        
+        <div class="rocky">
+            <div class="form-box">
+            <div class="button-box">
+             <div id="btn"></div>
+            <button type="button" class="toogle-btn" onclick="login()">Login</button>
+            <button type="button" class="toogle-btn"onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="fb-24.png">             
+                <img src="insta-24.png">              
+                <img src="twt-24.png">
+            </div>
+            <form id="login"class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox" ><span>Remember Password</span>
+                <button type="submit"class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Full name" required>
+                <input type="email" class="input-field" placeholder="Email id" required>
+                <input type="text" class="input-field" placeholder="Event Name" required>
+                <br>
+                <br>
+                <input type="checkbox" class="checkbox" ><span> I Agree to the Terms & Conditions</span>
+                <button class="cta"><a href="file:///C:/index.html/service.html" style="text-decoration: none">submit</a></button>
+            </form>
+        </div>
+        
+      </div>
+      <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+
+      </script>
+    </body>
+</html>
